@@ -69,22 +69,22 @@ Install-VstsAgentWin
 
 ### EXAMPLE 2
 ```
-Install-VstsAgentWin -Pool ConfigurationManagement -CapabilityTags DatabaseRight,GDPR
+Install-VstsAgentWin -Pool CM -CapabilityTags DatabaseRight,GDPR
 ```
 
 ### EXAMPLE 3
 ```
-Install-VstsAgentWin -EnvironmentName Dev -EnvironmentVMResourceTags KW
+Install-VstsAgentWin -EnvironmentName Dev -EnvironmentVMResourceTags XE8
 ```
 
 ### EXAMPLE 4
 ```
-Install-VstsAgentWin -DeploymentPoolName GH7 -WindowsUser SYSTEM
+Install-VstsAgentWin -DeploymentPoolName PTR9-Test -WindowsUser SYSTEM
 ```
 
 ### EXAMPLE 5
 ```
-Install-VstsAgentWin -DeploymentGroupName FXP4 -ProjectName Ops -DeploymentGroupTags Web,App
+Install-VstsAgentWin -DeploymentGroupName KJ7-Prod -ProjectName Ops -DeploymentGroupTags Web,App
 ```
 
 ### EXAMPLE 6
@@ -96,7 +96,7 @@ Install-VstsAgentWin -DeploymentGroupName FXP4 -ProjectName Ops -DeploymentGroup
 ```
 $env:VSTS_AGENT_INPUT_windowslogonaccount = "nameofuser@justifyit.se"
 > $env:VSTS_AGENT_INPUT_windowslogonpassword = "MyPassword"
-> Install-VstsAgentWin -ProjectName Ops -DeploymentGroupName FXP4-QA -WindowsUser ADUser
+> Install-VstsAgentWin -ProjectName Ops -DeploymentGroupName PTR9-QA -WindowsUser ADUser
 ```
 
 ## PARAMETERS
