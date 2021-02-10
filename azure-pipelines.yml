@@ -1,0 +1,15 @@
+trigger:
+- master
+- features/*
+
+resources:
+  repositories:
+    - repository: tpl
+      type: github
+      endpoint: MyGitHubServiceConnection
+      name: MyGitHubOrgOrUser/AzurePipelineDemo
+
+jobs:
+  - template: stages/jobs/publish-psmodule-jobs.yml@tpl
+    parameters:
+      modulename: VstsAgentWin
